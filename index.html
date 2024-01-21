@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buildo</title>
+
+  <!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/44992623.js"></script>
+<!-- End of HubSpot Embed Code -->
+<link rel="stylesheet" href="index.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-299694900-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-299694900-1');
+</script>
+
+</head>
+<body>
+  <header>
+ <nav>
+  <div class="logo">
+   Buildo
+  </div>
+  <div class="menu">
+    <a href="#">HOME</a>
+    <a href="#">MARKETING TOOL'S</a>
+    
+    <a href="#">OUR SITE</a>
+    <a href="#">CONTACT</a>
+  </div>
+  <div class="register">
+    <button class="register" onclick="openRegistrationForm()">Register</button>
+
+  </div>
+ </nav>
+ <section class="h-txt">
+  <span>EXPLORE</span>
+  <h1>THE BEST IDEAS WITH US</h1>
+  <br>
+  <a href="#">START FOR FREE</a>
+
+ </section>
+  </header>
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "44992623",
+    formId: "766bd302-9758-4464-b89a-c6ca02e9f10b"
+  });
+</script>
+
+
+<script>
+  function openRegistrationForm() {
+      // Create the registration form dynamically
+      var form = document.createElement("form");
+      form.id = "registrationForm";
+      form.style.width = "300px";
+      form.style.padding = "20px";
+      form.style.border = "1px solid #ccc";
+      form.style.borderRadius = "5px";
+      form.style.position = "fixed";
+      form.style.top = "50%";
+      form.style.left = "50%";
+      form.style.transform = "translate(-50%, -50%)";
+      form.style.backgroundColor = "#fff";
+      form.style.zIndex = "1000";
+
+      // Add form elements
+      var labelName = document.createElement("label");
+      labelName.innerHTML = "Name:";
+      form.appendChild(labelName);
+
+      var inputName = document.createElement("input");
+      inputName.type = "text";
+      inputName.id = "name";
+      inputName.name = "name";
+      inputName.style.width = "100%";
+      inputName.style.padding = "8px";
+      inputName.style.marginBottom = "12px";
+      form.appendChild(inputName);
+
+      var labelEmail = document.createElement("label");
+      labelEmail.innerHTML = "Email:";
+      form.appendChild(labelEmail);
+
+      var inputEmail = document.createElement("input");
+      inputEmail.type = "email";
+      inputEmail.id = "email";
+      inputEmail.name = "email";
+      inputEmail.style.width = "100%";
+      inputEmail.style.padding = "8px";
+      inputEmail.style.marginBottom = "12px";
+      form.appendChild(inputEmail);
+
+      var labelPassword = document.createElement("label");
+      labelPassword.innerHTML = "Password:";
+      form.appendChild(labelPassword);
+
+      var inputPassword = document.createElement("input");
+      inputPassword.type = "password";
+      inputPassword.id = "password";
+      inputPassword.name = "password";
+      inputPassword.style.width = "100%";
+      inputPassword.style.padding = "8px";
+      inputPassword.style.marginBottom = "12px";
+      form.appendChild(inputPassword);
+
+      var closeButton = document.createElement("button");
+      closeButton.innerHTML = "Close";
+      closeButton.type = "button";
+      closeButton.addEventListener("click", closeRegistrationForm);
+      closeButton.style.backgroundColor = "#ccc";
+      closeButton.style.color = "#fff";
+      closeButton.style.border = "none";
+      closeButton.style.padding = "8px 12px";
+      form.appendChild(closeButton);
+
+      document.body.appendChild(form);
+  }
+
+  function closeRegistrationForm() {
+      // Remove the registration form
+      var form = document.getElementById("registrationForm");
+      if (form) {
+          form.parentNode.removeChild(form);
+      }
+  }
+</script>
+
+
+
+</body>
+</html>
